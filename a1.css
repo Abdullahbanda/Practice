@@ -7,6 +7,7 @@
 
 :root {
     --primary-green: #30B868; 
+    --pure-white: #ffffff;
     --dark-blue: #001931;     
     --footer-bg:#001931;     
     --coral: #ff5f56;         
@@ -42,13 +43,36 @@
     background: #fff;
 }
 
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo img { height: 40px; }
-.logo-text { font-size: 24px; font-weight: 800; color: var(--primary-green); }
-.logo-text-wrapper small { display: block; font-size: 10px; margin-top: -5px; }
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.logo img { 
+    height: 40px; 
+}
+.logo-text { 
+    font-size: 24px; 
+    font-weight: 800; 
+    color: var(--primary-green); 
+}
+.logo-text-wrapper small { 
+    display: block; 
+    font-size: 10px; 
+    margin-top: -5px; 
+}
 
-.menu { display: flex; list-style: none; gap: 30px; }
-.menu a { text-decoration: none; color: #333; font-weight: 500; }
+.menu { 
+    display: flex; 
+    list-style: none; 
+    gap: 30px; 
+}
+
+.menu a { 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: 500; 
+}
 
 /* --- Hero Banner --- */
 .hero {
@@ -70,7 +94,8 @@
 .hero-content { text-align: center; max-width: 850px; padding: 20px; }
 
 .badge {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--pure-white);
+    color: var(--dark-blue);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 8px 16px;
     border-radius: 30px;
@@ -80,12 +105,23 @@
     margin-bottom: 30px;
 }
 
-.dot { height: 8px; width: 8px; background: #4ade80; border-radius: 50%; margin-right: 10px; }
+.dot { 
+    height: 8px; 
+    width: 8px; 
+    background: var(--primary-green); 
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
 
-h1 { font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+h1 { 
+    font-size: 56px; 
+    font-weight: 800; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
 .highlight { color: var(--primary-green); }
 
-.hero-content p { font-size: 18px; color: #d1d5db; margin-bottom: 40px; line-height: 1.6; }
+.hero-content p { font-size: 18px; color: var(--pure-white); margin-bottom: 40px; line-height: 1.6; }
 
 .hero-btns { display: flex; gap: 20px; justify-content: center; }
 
