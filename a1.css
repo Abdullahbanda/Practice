@@ -1,10 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', -apple-system, sans-serif;
-}
 
+/* ইউনিভার্সাল সিলেক্টর মামা। HTML ফাইলে যতগুলো ট্যাগ আছে (যেমন: h1, p, div, nav, footer), 
+এই ব্র্যাকেটের ভেতরের স্টাইলগুলো সবার ওপর সমানভাবে প্রযোজ্য হবে। */
+
+* {
+    margin: 0;            /* সব ট্যাগের বাইরের বাড়তি জায়গা মুছে ফেলে */
+    padding: 0;           /* সব ট্যাগের ভেতরের বাড়তি জায়গা মুছে ফেলে */
+    box-sizing: border-box; /* বর্ডার এবং প্যাডিংকে বক্সের মোট সাইজের ভেতরে রাখে */
+    font-family: 'Inter', sans-serif; /* পুরো সাইটে একই ফন্ট সেট করে */
+}
+/* :root হলো আমার স্টোররুম বা ভাণ্ডার। এখানে আমি সব প্রয়োজনীয় রঙ এবং সেটিংস জমা রাখলাম যেন পরে সারা 
+সাইটে সেগুলো বার বার ব্যবহার করা যায় এবং এক জায়গাতেই সব নিয়ন্ত্রণ করা যায়। */
 :root {
     --primary-green: #30B868; 
     --pure-white: #ffffff;
@@ -13,7 +18,8 @@
     --coral: #ff5f56;         
     --gray-text: #627382;
 }
-
+/* কনটেইনার হলো একটি অদৃশ্য সীমানা। এটি লেখা বা ছবিগুলোকে স্ক্রিনের একেবারে বাম বা 
+ডান দিকের সাথে লেগে যেতে বাধা দেয় এবং সবকিছু মাঝখানে সাজিয়ে রাখে। */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -134,8 +140,8 @@ h1 {
     font-weight: 600;
 }
 
-/* --- Notes Section --- */
-.notes-grid { padding: 100px 0; background: #fff; text-align: center; }
+/* --- Note Section --- */
+.notes-grid { padding: 100px 0; background: var(--pure-white); text-align: center; }
 .section-header h2 { font-size: 42px; color: var(--dark-blue); font-weight: 800; margin-bottom: 15px; }
 .section-header p { color: var(--gray-text); margin-bottom: 60px; }
 
