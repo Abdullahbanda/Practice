@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+:root {
+    --primary-green: #30B868; 
+    --dark-blue: #001931;     
+    --footer-bg:#001931;     
+    --coral: #ff5f56;         
+    --gray-text: #627382;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Buttons --- */
+.btn-green {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-green:hover { background-color: #3d7351; }
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+}
+
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { height: 40px; }
+.logo-text { font-size: 24px; font-weight: 800; color: var(--primary-green); }
+.logo-text-wrapper small { display: block; font-size: 10px; margin-top: -5px; }
+
+.menu { display: flex; list-style: none; gap: 30px; }
+.menu a { text-decoration: none; color: #333; font-weight: 500; }
+
+/* --- Hero Banner --- */
+.hero {
+    background: url('../assets/hero-bg.png') no-repeat center center/cover;
+    min-height: 85vh;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.hero-content { text-align: center; max-width: 850px; padding: 20px; }
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.dot { height: 8px; width: 8px; background: #4ade80; border-radius: 50%; margin-right: 10px; }
+
+h1 { font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+.highlight { color: var(--primary-green); }
+
+.hero-content p { font-size: 18px; color: #d1d5db; margin-bottom: 40px; line-height: 1.6; }
+
+.hero-btns { display: flex; gap: 20px; justify-content: center; }
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
